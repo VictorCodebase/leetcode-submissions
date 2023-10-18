@@ -6,7 +6,7 @@ class Node:
 
 class Solution:
     #On2 solution
-    def checkForCycle(self, head: Node):
+    def hasCycle(self, head: Node):
         if head is None:
             return False
         list = []
@@ -17,8 +17,8 @@ class Solution:
             head = head.next
         return False
 
-#print(Solution.checkForCycle(Solution, Node(1, Node(2, Node(3, Node(4, Node(5)))))))
+#print(Solution.hasCycle(Solution, Node(1, Node(2, Node(3, Node(4, Node(5)))))))
 # Provide data input that has a cycle
-print(Solution.checkForCycle(Solution, Node(1, Node(2, Node(3, Node(4, Node(5)))))))
+print(Solution.hasCycle(Solution, Node(1, Node(2, Node(3, Node(4, Node(5)))))))
 
         
